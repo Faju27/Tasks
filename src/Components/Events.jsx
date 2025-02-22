@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Events = () => {
 
     const [counter, setCounter] = useState(null)
-    const [count ,setCount] = useState(null)
+    const [count ,setCount] = useState(0)
     const [axis,setAxis] = useState({x : 0 ,y : 0})
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Events = () => {
 
     
     return (
-    <div className='text-success bg-warning' style={{height:'100vh'}} >
+    <div className='text-success bg-warning' style={{height:'50vh'}} >
         <div className='d-flex flex-column align-items-center'>
             <div> {counter} </div>
             <div> {count} </div>
